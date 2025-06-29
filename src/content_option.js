@@ -1,144 +1,97 @@
-const logotext = "JOHN";
+
+import JustinMainImage from './assets/images/justin-soon.jpg';
+import JustinResume from './assets/documents/Justin_Resume_Jun2025.pdf';
+import pathPilotImage from './assets/projectImages/pathpilot.png';
+import cafeConnectImage from './assets/projectImages/cafeconnect.png';
+import javaLogo from './assets/images/javaimage.svg';
+import icons from "simple-icons/icons";
+
+const logotext = "JSJK";
 const meta = {
-    title: "John Doe",
-    description: "I’m John Doe data scientist _ Full stack devloper,currently working in Berlin",
+    title: "Justin Soon",
+    description: "I’m Justin Soon",
 };
 
 const introdata = {
-    title: "I’m John Doe",
+    title: "I’m Justin Soon",
     animated: {
-        first: "I love coding",
-        second: "I code cool websites",
-        third: "I develop mobile apps",
+        first: "I hack",
+        second: "I build things",
+        third: "I make coffee",
     },
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum",
-    your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
+    description: "I am a software engineer and cybersecurity enthusiast with a passion for creating innovative solutions. I love to explore new technologies and push the boundaries of what's possible.",
+    your_img_url: JustinMainImage,
 };
 
 const dataabout = {
-    title: "abit about my self",
-    aboutme: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis dolor id ligula semper elementum feugiat pretium nulla. Nunc non commodo dolor. Nunc mollis dignissim facilisis. Morbi ut magna ultricies.",
+    title: "A bit About Myself",
+    aboutme: "Hi, I'm Justin Soon, a Computer Science student at NUS with a passion for building clean, scalable software and a strong interest in cybersecurity. I’ve contributed to full-stack projects, developed mobile apps, and explored areas like offensive security and AI-driven systems. Outside of tech, I’m also a dedicated coffee enthusiast—I run a small dorm-room café and love experimenting with brews. Whether it’s crafting efficient code or the perfect cup, I bring the same attention to detail and curiosity to everything I do. I'm always excited to learn, collaborate, and tackle real-world problems through software.",
 };
-const worktimeline = [{
-        jobtitle: "Designer of week",
-        where: "YAdfi",
-        date: "2020",
-    },
-    {
-        jobtitle: "Designer of week",
-        where: "Jamalya",
-        date: "2019",
-    },
-    {
-        jobtitle: "Designer of week",
-        where: "ALquds",
-        date: "2019",
-    },
+const resume = [{
+    description: "For a more detailed view of my professional experience, please download my resume with the link below.",
+},
+];
+const resumeDownloadLink = JustinResume;
+
+const skills = [
+  { name: "Python", icon: "python" },
+  { name: "JavaScript", icon: "javascript" },
+  { name: "React", icon: "react" },
+  { name: "Spring Boot", icon: "springboot" },
+  { name: "Tailwind CSS", icon: "simpleicons:tailwindcss" },
+  { name: "Google Maps", icon: "simpleicons:googlemaps" },
+  { name: "Kali Linux", icon: "simpleicons:kalilinux" },
+  { name: "Wireshark", icon: "simpleicons:wireshark" },
+  { name: "Burp Suite", icon: "simpleicons:burpsuite" },
+  { name: "Metasploit", icon: "simpleicons:metasploit" },
+  { name: "Git", icon: "simpleicons:git" },
 ];
 
-const skills = [{
-        name: "Python",
-        value: 90,
-    },
-    {
-        name: "Djano",
-        value: 85,
-    },
-    {
-        name: "Javascript",
-        value: 80,
-    },
-    {
-        name: "React",
-        value: 60,
-    },
-    {
-        name: "Jquery",
-        value: 85,
-    },
-];
 
-const services = [{
-        title: "UI & UX Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
-    },
-    {
-        title: "Mobile Apps",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
-    },
-    {
-        title: "Wordpress Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
-    },
-];
 
-const dataportfolio = [{
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+const experience = [
+    {
+        title: "Software Engineer Intern",
+        period: "May 2024 - Aug 2024",
+        company: "Koru Partners Pte Ltd",
+        description: "Developed Spacetime permission scripts using Django to enhance access control and security. Led deployment of cybersecurity solutions, including Cloudflare integration and endpoint protection with SEPMS."
     },
     {
-        img: "https://picsum.photos/400/800/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/600/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/300/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/700/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        title: "SOC Analyst",
+        period: "Jan 2023 - Aug 2023",
+        company: "The Digital and Intelligence Service, Singapore",
+        description: "Identified and analyzed security events for critical SAF infrastructure. Led teams in 24/7 threat monitoring and cyber defence exercises under SAF's cyber test and evaluation centre."
     },
 
-    {
-        img: "https://picsum.photos/400/600/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/300/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/550/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/700/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
 ];
+
+const dataportfolio = [
+  {
+    img: pathPilotImage,
+    description: "PathPilot project...",
+    link: "#",
+    tech: [
+      { name: "react", simple: true },
+      { name: "firebase", simple: true },
+      { name: "googlemaps", simple: true }
+    ]
+  },
+  {
+    img: cafeConnectImage,
+    description: "CafeConnect project...",
+    link: "#",
+    tech: [
+      { name: "Java", customSrc: javaLogo },
+      { name: "JSON", simple: true }
+    ]
+  }
+];
+
+
 
 const contactConfig = {
-    YOUR_EMAIL: "name@domain.com",
-    YOUR_FONE: "(555)123-4567",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ",
+    YOUR_EMAIL: "jienkhye01@gmail.com",
+    description: "Whether it's about collaboration, freelance opportunities, or just a chat about tech or coffee, I'm always open to connecting. I'm currently looking for exciting roles in software engineering or cybersecurity, so feel free to reach out.",
     // creat an emailjs.com account 
     // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
     YOUR_SERVICE_ID: "service_id",
@@ -147,18 +100,17 @@ const contactConfig = {
 };
 
 const socialprofils = {
-    github: "https://github.com",
-    facebook: "https://facebook.com",
-    linkedin: "https://linkedin.com",
-    twitter: "https://twitter.com",
+    github: "https://github.com/Jsjk112344",
+    linkedin: "https://www.linkedin.com/in/justin-soon-558372212/",
 };
 export {
     meta,
     dataabout,
     dataportfolio,
-    worktimeline,
+    resume,
+    resumeDownloadLink,
+    experience,
     skills,
-    services,
     introdata,
     contactConfig,
     socialprofils,

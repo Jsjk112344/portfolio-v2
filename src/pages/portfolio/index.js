@@ -20,17 +20,31 @@ export const Portfolio = () => {
           </Col>
         </Row>
         <div className="mb-5 po_items_ho">
-          {dataportfolio.map((data, i) => {
-            return (
-              <div key={i} className="po_item">
-                <img src={data.img} alt="" />
-                <div className="content">
-                  <p>{data.description}</p>
-                  <a href={data.link}>view project</a>
-                </div>
+          {dataportfolio.map((data, i) => (
+            <div className="po_item" key={i}>
+              <img src={data.img} alt={`Project ${i}`} />
+              <div className="content">
+                <p>{data.description}</p>
+                <a href={data.link}>View Project</a>
               </div>
-            );
-          })}
+              <div className="tech-icons">
+                <span className="tech-label">Built with:</span>
+                {data.tech?.map((icon, idx) => (
+                  <img
+                    key={idx}
+                    src={
+                      icon.customSrc
+                        ? icon.customSrc
+                        : `https://cdn.simpleicons.org/${icon.name}`
+                    }
+                    alt={icon.name}
+                    title={icon.name}
+                    className="tech-icon"
+                  />
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </Container>
     </HelmetProvider>

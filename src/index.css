@@ -1,10 +1,10 @@
 :root {
-    --bg-color: #0c0c0c;
-    --primary-color: #0d0d0d;
+    --bg-color: #6d6970;
+    --primary-color: #504040;
     --secondary-color: #fff;
     --text-color: #fff;
     --text-color-2: #fff;
-    --text-color-3: rgb(204, 0, 0);
+    /* --text-color-3: rgb(138, 107, 107); */
     --overlay-color: rgb(12 12 12 / 63%);
 }
 
@@ -93,4 +93,10 @@ code {
 
 .color_sec {
     color: var(--secondary-color);
+}
+
+.service_period {
+  font-size: 1rem;
+  color: #b0a8a8;
+  font-weight: normal;
 }

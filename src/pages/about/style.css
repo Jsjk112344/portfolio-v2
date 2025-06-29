@@ -98,3 +98,24 @@
         transform: translateZ(0);
     }
 }
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 32px;
+  justify-items: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-primary {
+  background-color: #7a7b7b !important; /* Your custom color */
+  border-color: #6c717a !important;
+  color: #fff !important;
+}
