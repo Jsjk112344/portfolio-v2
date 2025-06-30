@@ -7,6 +7,7 @@ import {
   meta,
   resume,
   resumeDownloadLink,
+  certifications,
   skills,
   experience,
 } from "../../content_option";
@@ -41,6 +42,8 @@ export const About = () => {
             <h3 className="color_sec py-4">Resume</h3>
           </Col>
           <Col lg="7">
+
+        
         <table className="table caption-top">
           <tbody>
              {resume.map((entry, index) => (
@@ -65,6 +68,32 @@ export const About = () => {
             </a>
           </Col>
         </Row>
+        <Row className="sec_sp">
+          <Col lg="5">
+            <h3 className="color_sec py-4">Certifications</h3>
+          </Col>
+          <Col lg="7">
+            <div className="cert-grid">
+              {certifications.map((cert, index) => (
+                <a
+                  href={cert.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  key={index}
+                  className="cert-badge"
+                >
+                  <img
+                    src={cert.img}
+                    alt={cert.name}
+                    title={cert.name}
+                    className="cert-img"
+                  />
+                </a>
+              ))}
+            </div>
+          </Col>
+        </Row>
+
         <Row className="sec_sp">
           <Col lg="5">
             <h3 className="color_sec py-4">Skills</h3>

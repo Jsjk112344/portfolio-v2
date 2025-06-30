@@ -3,7 +3,12 @@ import JustinMainImage from './assets/images/justin-soon.jpg';
 import JustinResume from './assets/documents/Justin_Resume_Jun2025.pdf';
 import pathPilotImage from './assets/projectImages/pathpilot.png';
 import cafeConnectImage from './assets/projectImages/cafeconnect.png';
+import readlyImage from './assets/projectImages/readly.png';
 import javaLogo from './assets/images/javaimage.svg';
+import maven from './assets/images/maven.png';
+import oscp_badge from './assets/certifications/oscp.png'
+import osep_badge from './assets/certifications/osep.png'
+
 import icons from "simple-icons/icons";
 
 const logotext = "JSJK";
@@ -32,6 +37,20 @@ const resume = [{
 },
 ];
 const resumeDownloadLink = JustinResume;
+
+const certifications = [
+  {
+    name: "OSCP",
+    img: oscp_badge, // or an import if using `import oscpBadge from ...`
+    link: "https://www.credential.net/03fc5a83-a1a1-4f13-b9e1-39cab3fe37e2",
+  },
+  {
+    name: "OSEP",
+    img: osep_badge,
+    link: "https://credentials.offsec.com/33bbf414-c222-4b6c-ba28-d04bca40b309",
+  },
+];
+
 
 const skills = [
   { name: "Python", icon: "python" },
@@ -68,7 +87,7 @@ const experience = [
 const dataportfolio = [
   {
     img: pathPilotImage,
-    description: "PathPilot project...",
+    description: "A mobile navigation app to assist food delivery volunteers with route planning using Google Maps API. Integrated Firebase backend and designed for smooth UX to improve efficiency and reduce confusion during public transport-based deliveries.",
     link: "#",
     tech: [
       { name: "react", simple: true },
@@ -78,13 +97,25 @@ const dataportfolio = [
   },
   {
     img: cafeConnectImage,
-    description: "CafeConnect project...",
+    description: "A Java-based inventory and point-of-sale system tailored for café owners. Includes an intuitive UI and real-time sales tracking. Custom data models and file I/O handling with backend logic and object-oriented programming",
     link: "#",
     tech: [
       { name: "Java", customSrc: javaLogo },
       { name: "JSON", simple: true }
     ]
+  },
+  {
+    img: readlyImage,
+    description: "Java-based inventory and POS system for cafés, with real-time sales tracking and an intuitive interface.",
+    link: "#",
+    tech: [
+      { name: "Java", customSrc: javaLogo },
+      { name: "Spring", simple: true },
+      { name: "Maven", customSrc: maven },
+      { name: "JSON", simple: true }
+    ]
   }
+
 ];
 
 
@@ -107,6 +138,7 @@ export {
     meta,
     dataabout,
     dataportfolio,
+    certifications,
     resume,
     resumeDownloadLink,
     experience,

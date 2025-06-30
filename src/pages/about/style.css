@@ -119,3 +119,25 @@
   border-color: #6c717a !important;
   color: #fff !important;
 }
+.cert-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.cert-badge {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.cert-badge:hover {
+  transform: scale(1.05);
+}
+
+.cert-img {
+  height: 80px;
+  width: auto;
+  border-radius: 8px;
+}
