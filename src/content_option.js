@@ -8,7 +8,7 @@ import javaLogo from './assets/images/javaimage.svg';
 import maven from './assets/images/maven.png';
 import oscp_badge from './assets/certifications/oscp.png'
 import osep_badge from './assets/certifications/osep.png'
-
+import { PathPilotProject } from './pages/projectDetails/pathpilot';
 import icons from "simple-icons/icons";
 
 const logotext = "JSJK";
@@ -88,7 +88,8 @@ const dataportfolio = [
   {
     img: pathPilotImage,
     description: "A mobile navigation app to assist food delivery volunteers with route planning using Google Maps API. Integrated Firebase backend and designed for smooth UX to improve efficiency and reduce confusion during public transport-based deliveries.",
-    link: "#",
+    link: "/projectDetails/pathpilot",
+    title: "PathPilot",
     tech: [
       { name: "react", simple: true },
       { name: "firebase", simple: true },
@@ -98,7 +99,8 @@ const dataportfolio = [
   {
     img: cafeConnectImage,
     description: "A Java-based inventory and point-of-sale system tailored for café owners. Includes an intuitive UI and real-time sales tracking. Custom data models and file I/O handling with backend logic and object-oriented programming",
-    link: "#",
+    link: "/projectDetails/cafeconnect",
+    title: "CafeConnect",
     tech: [
       { name: "Java", customSrc: javaLogo },
       { name: "JSON", simple: true }
@@ -106,8 +108,9 @@ const dataportfolio = [
   },
   {
     img: readlyImage,
-    description: "Java-based inventory and POS system for cafés, with real-time sales tracking and an intuitive interface.",
-    link: "#",
+    description: "A Java-based book logging application built with Spring Boot. Designed as a hands-on project to learn backend development while tracking personal reading habits with clean RESTful APIs.",
+    link: "/projectDetails/readly",
+    title: "Readly",
     tech: [
       { name: "Java", customSrc: javaLogo },
       { name: "Spring", simple: true },

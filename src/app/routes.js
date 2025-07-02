@@ -3,6 +3,9 @@ import { Route, Routes} from "react-router-dom";
 import withRouter from "../hooks/withRouter"
 import { Home } from "../pages/home";
 import { Portfolio } from "../pages/portfolio";
+import { PathPilotProject } from "../pages/projectDetails/pathpilot";
+import { CafeConnectProject } from "../pages/projectDetails/cafeconnect";
+import { ReadlyProject } from "../pages/projectDetails/readly";
 import { ContactUs } from "../pages/contact";
 import { About } from "../pages/about";
 import { Socialicons } from "../components/socialicons";
@@ -24,7 +27,11 @@ const AnimatedRoutes = withRouter(({ location }) => (
         <Route path="/about" element={<About />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/contact" element={<ContactUs />} />
-        <Route path="*" element={<Home />} />
+        <Route path="/projectDetails/pathpilot" element={<PathPilotProject />} />
+        <Route path="/projectDetails/readly" element={<ReadlyProject />} />
+        <Route path="/projectDetails/cafeconnect" element={<CafeConnectProject  />} />
+
+        {/* <Route path="*" element={<Home />} /> */}
       </Routes>
     </CSSTransition>
   </TransitionGroup>

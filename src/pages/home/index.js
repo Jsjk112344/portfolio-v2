@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import Typewriter from "typewriter-effect";
-import { introdata, meta } from "../../content_option";
+import { introdata, meta, certifications, resumeDownloadLink } from "../../content_option";
 import { Link } from "react-router-dom";
 
 export const Home = () => {
@@ -37,7 +37,30 @@ export const Home = () => {
                     }}
                   />
                 </h1>
-                <p className="mb-1x">{introdata.description}</p>
+                <p className="intro-description">{introdata.description}</p>
+
+                {/* Certifications Section */}
+                <div className="certifications-section mb-4">
+                  <h3 className="cert-title color_pr">Certifications</h3>
+                  <div className="cert-grid">
+                    {certifications.map((cert, index) => (
+                      <a 
+                        key={index}
+                        href={cert.link} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="cert-badge"
+                      >
+                        <img 
+                          src={cert.img} 
+                          alt={cert.name}
+                          className="cert-img"
+                        />
+                      </a>
+                    ))}
+                  </div>
+                </div>
+
                 <div className="intro_btn-action pb-5">
                   <Link to="/portfolio" className="text_2">
                     <div id="button_p" className="ac_btn btn ">
@@ -47,14 +70,14 @@ export const Home = () => {
                       <div className="ring three"></div>
                     </div>
                   </Link>
-                  <Link to="/contact">
-                    <div id="button_h" className="ac_btn btn">
-                      Contact Me
+                  <a href={resumeDownloadLink} download className="text_2">
+                    <div id="button_p" className="ac_btn btn">
+                      Download Resume
                       <div className="ring one"></div>
                       <div className="ring two"></div>
                       <div className="ring three"></div>
                     </div>
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
