@@ -70,9 +70,15 @@ const skills = [
 
 const experience = [
     {
+        title: "Software Engineer & Business Development Intern",
+        period: "Aug 2025 - Dec 2025",
+        company: "Elephantech Inc, Tokyo, Japan",
+        description: "As part of the NUS Overseas Colleges program."
+    },
+    {
         title: "Software Engineer Intern",
         period: "May 2024 - Aug 2024",
-        company: "Koru Partners Pte Ltd",
+        company: "Koru Partners Pte Ltd, Singapore",
         description: "Developed Spacetime permission scripts using Django to enhance access control and security. Led deployment of cybersecurity solutions, including Cloudflare integration and endpoint protection with SEPMS."
     },
     {
@@ -125,7 +131,7 @@ const dataportfolio = [
 
 const contactConfig = {
     YOUR_EMAIL: "jienkhye01@gmail.com",
-    description: "Whether it's about collaboration, freelance opportunities, or just a chat about tech or coffee, I'm always open to connecting. I'm currently looking for exciting roles in software engineering or cybersecurity, so feel free to reach out.",
+    description: "Whether it's about collaboration, freelance opportunities, or just a chat about tech or coffee, I'm always open to connecting. I'm currently looking for exciting roles in software engineering or cybersecurity, so feel free to reach out via email or connect with me on LinkedIn. Let's build something great together!",
     // creat an emailjs.com account 
     // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
     YOUR_SERVICE_ID: "service_id",
