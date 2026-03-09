@@ -37,11 +37,19 @@ export const Home = () => {
                     }}
                   />
                 </h1>
+                {/* Founder Callout */}
+                <div className="founder-callout">
+                  <span className="callout-label">Currently building</span>
+                  <Link to="/projectDetails/ducket" className="callout-link">
+                    Ducket — NFT ticketing to end scalping
+                  </Link>
+                </div>
+
                 <p className="intro-description">{introdata.description}</p>
 
                 {/* Certifications Section */}
                 <div className="certifications-section mb-4">
-                  <h3 className="cert-title color_pr">Certifications</h3>
+                  <h3 className="cert-title">Certifications</h3>
                   <div className="cert-grid">
                     {certifications.map((cert, index) => (
                       <a 

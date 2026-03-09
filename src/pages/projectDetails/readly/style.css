@@ -1,4 +1,4 @@
-/* PathPilot Project Page Specific Styles */
+/* Project Detail Page Styles */
 
 .project-page {
   padding-top: 60px;
@@ -27,9 +27,10 @@
 
 .project-title {
   font-size: 4rem;
-  font-weight: bold;
+  font-weight: 800;
   margin-bottom: 1rem;
-  font-family: 'Marcellus', serif;
+  font-family: 'Outfit', sans-serif;
+  color: var(--primary-color);
 }
 
 .project-subtitle {
@@ -57,8 +58,9 @@
 
 .hero-image {
   max-width: 400px;
-  border-radius: 8px;
+  border-radius: 12px;
   overflow: hidden;
+  box-shadow: 0 4px 20px var(--card-shadow);
 }
 
 .hero-image img {
@@ -74,9 +76,10 @@
 
 .section-title {
   font-size: 2.5rem;
-  font-weight: bold;
+  font-weight: 700;
   margin-bottom: 3rem;
-  font-family: 'Marcellus', serif;
+  font-family: 'Outfit', sans-serif;
+  color: var(--primary-color);
 }
 
 .text-center {
@@ -104,31 +107,35 @@
 
 .tech-card {
   padding: 2rem;
-  border-radius: 8px;
+  border-radius: 12px;
   text-align: center;
   transition: all 0.3s ease;
+  background: var(--cream-color);
+  border: 1px solid var(--card-border);
 }
 
 .tech-card:hover {
   transform: translateY(-8px);
+  box-shadow: 0 8px 24px var(--card-shadow);
 }
 
 .tech-card-icon {
   width: 60px;
   height: 60px;
   margin-bottom: 1rem;
-  filter: brightness(0.8) sepia(1) hue-rotate(90deg) saturate(2);
+  opacity: 0.8;
   transition: all 0.3s ease;
 }
 
 .tech-card:hover .tech-card-icon {
-  filter: brightness(1.2) sepia(1) hue-rotate(90deg) saturate(3);
+  opacity: 1;
   transform: scale(1.1);
 }
 
 .tech-card-title {
   font-size: 1.3rem;
   margin-bottom: 0.5rem;
+  color: var(--primary-color);
 }
 
 .tech-card-description {
@@ -147,9 +154,10 @@
 
 .feature-card {
   padding: 2rem;
-  border-radius: 8px;
+  border-radius: 12px;
   transition: all 0.3s ease;
   position: relative;
+  background: var(--cream-color);
 }
 
 .feature-card::before {
@@ -181,6 +189,7 @@
 .feature-title {
   font-size: 1.3rem;
   margin-bottom: 1rem;
+  color: var(--primary-color);
 }
 
 .feature-description {
@@ -193,7 +202,7 @@
   font-size: 0.9rem;
   font-style: italic;
   opacity: 0.7;
-  border-top: 1px solid var(--primary-color);
+  border-top: 1px solid var(--card-border);
   padding-top: 0.5rem;
 }
 
@@ -213,8 +222,9 @@
 .challenge-item {
   padding: 2rem;
   border-left: 4px solid var(--primary-color);
-  border-radius: 0 8px 8px 0;
+  border-radius: 0 12px 12px 0;
   transition: all 0.3s ease;
+  background: var(--cream-color);
 }
 
 .challenge-item:hover {
@@ -224,6 +234,7 @@
 .challenge-title {
   font-size: 1.3rem;
   margin-bottom: 1rem;
+  color: var(--primary-color);
 }
 
 .challenge-description {
@@ -236,8 +247,9 @@
   font-size: 0.95rem;
   font-weight: 500;
   padding: 1rem;
-  border-radius: 4px;
+  border-radius: 8px;
   border-left: 3px solid var(--secondary-color);
+  background: var(--cream-color);
 }
 
 /* Results */
@@ -255,19 +267,23 @@
 
 .metric-card {
   padding: 2rem;
-  border-radius: 8px;
+  border-radius: 12px;
   text-align: center;
   transition: all 0.3s ease;
+  background: var(--cream-color);
+  border: 1px solid var(--card-border);
 }
 
 .metric-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 4px 16px var(--card-shadow);
 }
 
 .metric-value {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
+  color: var(--primary-color);
 }
 
 .metric-label {
@@ -322,14 +338,16 @@
 
 .technical-card {
   padding: 1.5rem;
-  border-radius: 8px;
-  border: 1px solid var(--primary-color);
+  border-radius: 12px;
+  border: 1px solid var(--card-border);
+  background: var(--cream-color);
 }
 
 .technical-category {
   font-size: 1.1rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
+  color: var(--primary-color);
 }
 
 .technical-description {
@@ -348,14 +366,16 @@
 
 .gallery-item {
   position: relative;
-  border-radius: 8px;
+  border-radius: 12px;
   overflow: hidden;
   transition: all 0.3s ease;
-  border: 2px solid var(--primary-color);
+  border: 1px solid var(--card-border);
+  box-shadow: 0 2px 8px var(--card-shadow);
 }
 
 .gallery-item:hover {
   transform: translateY(-5px);
+  box-shadow: 0 8px 24px var(--card-shadow);
 }
 
 .gallery-image {
@@ -379,13 +399,14 @@
   font-size: 0.9rem;
   font-weight: 500;
   text-align: center;
+  color: #FFFFFF;
 }
 
 /* Call to Action */
 .project-cta {
   padding: 80px 0;
   text-align: center;
-  border-top: 2px solid var(--primary-color);
+  border-top: 1px solid var(--card-border);
 }
 
 .cta-content {
@@ -396,7 +417,8 @@
 .cta-title {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  font-family: 'Marcellus', serif;
+  font-family: 'Outfit', sans-serif;
+  color: var(--primary-color);
 }
 
 .cta-description {
@@ -414,15 +436,15 @@
 }
 
 .portfolio-btn {
-  background: #000000;
+  background: var(--primary-color);
   border: 2px solid var(--primary-color);
-  color: var(--primary-color);
-  padding: 6px 12px;
+  color: #FFFFFF;
+  padding: 10px 24px;
   text-align: center;
   font-size: 0.9rem;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Inter', sans-serif;
   text-decoration: none;
-  border-radius: 4px;
+  border-radius: 6px;
   transition: all 0.3s ease;
   margin-top: 15px;
   font-weight: 500;
@@ -430,9 +452,41 @@
 }
 
 .portfolio-btn:hover {
-  background: var(--primary-color);
-  color: #000000;
+  background: #2E1D56;
+  border-color: #2E1D56;
+  color: #FFFFFF;
   text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px var(--card-shadow);
+}
+
+/* Architecture */
+.architecture-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.architecture-card {
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: var(--cream-color);
+  border: 1px solid var(--card-border);
+}
+
+.architecture-name {
+  color: var(--primary-color);
+}
+
+.tech-tag {
+  display: inline-block;
+  padding: 2px 8px;
+  margin: 2px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  border: 1px solid var(--card-border);
+  color: var(--primary-color);
 }
 
 /* Responsive Design */
@@ -442,32 +496,32 @@
     gap: 40px;
     text-align: center;
   }
-  
+
   .project-title {
     font-size: 2.5rem;
   }
-  
+
   .project-subtitle {
     font-size: 1.2rem;
   }
-  
+
   .section-title {
     font-size: 2rem;
   }
-  
+
   .tech-grid,
   .features-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .results-metrics {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .media-gallery {
     grid-template-columns: 1fr;
   }
-  
+
   .hero-buttons,
   .cta-buttons {
     flex-direction: column;
@@ -479,19 +533,19 @@
   .container {
     padding: 0 15px;
   }
-  
+
   .project-section {
     padding: 60px 0;
   }
-  
+
   .project-title {
     font-size: 2rem;
   }
-  
+
   .results-metrics {
     grid-template-columns: 1fr;
   }
-  
+
   .tech-card,
   .feature-card,
   .challenge-item {

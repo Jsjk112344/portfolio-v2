@@ -188,8 +188,8 @@ export const CafeConnectProject = () => {
           <div className="container">
             <div className="hero-grid">
               <div className="hero-content">
-                <h1 className="project-title glow-text color_pr">{projectData.title}</h1>
-                <p className="project-subtitle color_sec">{projectData.subtitle}</p>
+                <h1 className="project-title">{projectData.title}</h1>
+                <p className="project-subtitle">{projectData.subtitle}</p>
                 <p className="project-overview">{projectData.overview}</p>
                 
                 <div className="hero-buttons">
@@ -202,7 +202,7 @@ export const CafeConnectProject = () => {
                 </div>
               </div>
               <div className="hero-image-container">
-                <div className="hero-image neon-border pulse">
+                <div className="hero-image">
                   <img src={cafeConnectImage} alt="CaféConnect Desktop Application" />
                 </div>
               </div>
@@ -211,10 +211,10 @@ export const CafeConnectProject = () => {
         </section>
 
         {/* Motivation Section */}
-        <section className="project-section bg_cream">
+        <section className="project-section">
           <div className="container">
             <div className="section-content-wrapper">
-              <h2 className="section-title color_pr">{projectData.motivation.title}</h2>
+              <h2 className="section-title">{projectData.motivation.title}</h2>
               <div className="section-content">
                 <p>{projectData.motivation.content}</p>
               </div>
@@ -225,16 +225,16 @@ export const CafeConnectProject = () => {
         {/* Technologies Section */}
         <section className="project-section">
           <div className="container">
-            <h2 className="section-title color_pr text-center">Technologies & Frameworks</h2>
+            <h2 className="section-title text-center">Technologies & Frameworks</h2>
             <div className="tech-grid">
               {projectData.technologies.map((tech, index) => (
-                <div key={index} className="tech-card bg_cream neon-border">
+                <div key={index} className="tech-card">
                   <img 
                     src={tech.customSrc ? tech.customSrc : `https://cdn.simpleicons.org/${tech.icon}`} 
                     alt={tech.name}
                     className="tech-card-icon"
                     />
-                  <h4 className="tech-card-title color_sec">{tech.name}</h4>
+                  <h4 className="tech-card-title">{tech.name}</h4>
                   <p className="tech-card-description">{tech.description}</p>
                 </div>
               ))}
@@ -243,16 +243,16 @@ export const CafeConnectProject = () => {
         </section>
 
         {/* Features Section */}
-        <section className="project-section bg_cream">
+        <section className="project-section">
           <div className="container">
-            <h2 className="section-title color_pr text-center">Core Features & Capabilities</h2>
+            <h2 className="section-title text-center">Core Features & Capabilities</h2>
             <div className="features-grid">
               {projectData.features.map((feature, index) => (
-                <div key={index} className="feature-card bg_accent">
+                <div key={index} className="feature-card">
                   <div className="feature-icon">{feature.icon}</div>
-                  <h4 className="feature-title color_sec">{feature.title}</h4>
+                  <h4 className="feature-title">{feature.title}</h4>
                   <p className="feature-description">{feature.description}</p>
-                  <div className="feature-technical color_sec">{feature.technical}</div>
+                  <div className="feature-technical">{feature.technical}</div>
                 </div>
               ))}
             </div>
@@ -263,16 +263,16 @@ export const CafeConnectProject = () => {
         <section className="project-section">
           <div className="container">
             <div className="architecture-wrapper">
-              <h2 className="section-title color_pr text-center">{projectData.architecture.title}</h2>
+              <h2 className="section-title text-center">{projectData.architecture.title}</h2>
               <p className="architecture-description text-center">{projectData.architecture.description}</p>
               <div className="architecture-grid">
                 {projectData.architecture.components.map((component, index) => (
-                  <div key={index} className="architecture-card bg_cream neon-border">
-                    <h4 className="architecture-name color_sec">{component.name}</h4>
+                  <div key={index} className="architecture-card">
+                    <h4 className="architecture-name">{component.name}</h4>
                     <p className="architecture-desc">{component.description}</p>
                     <div className="architecture-tech">
                       {component.technologies.map((tech, idx) => (
-                        <span key={idx} className="tech-tag color_pr">{tech}</span>
+                        <span key={idx} className="tech-tag">{tech}</span>
                       ))}
                     </div>
                   </div>
@@ -286,13 +286,13 @@ export const CafeConnectProject = () => {
         <section className="project-section">
           <div className="container">
             <div className="challenges-wrapper">
-              <h2 className="section-title color_pr text-center">Technical Challenges & Solutions</h2>
+              <h2 className="section-title text-center">Technical Challenges & Solutions</h2>
               <div className="challenges-list">
                 {projectData.challenges.map((challenge, index) => (
-                  <div key={index} className="challenge-item bg_cream">
-                    <h4 className="challenge-title color_sec">{challenge.title}</h4>
+                  <div key={index} className="challenge-item">
+                    <h4 className="challenge-title">{challenge.title}</h4>
                     <p className="challenge-description">{challenge.description}</p>
-                    <div className="challenge-solution bg_accent">
+                    <div className="challenge-solution">
                       <strong>Solution:</strong> {challenge.solution}
                     </div>
                   </div>
@@ -306,21 +306,21 @@ export const CafeConnectProject = () => {
         <section className="project-section">
           <div className="container">
             <div className="results-wrapper">
-              <h2 className="section-title color_pr text-center">{projectData.results.title}</h2>
+              <h2 className="section-title text-center">{projectData.results.title}</h2>
               <div className="results-metrics">
                 {projectData.results.metrics.map((metric, index) => (
-                  <div key={index} className="metric-card bg_cream neon-border">
-                    <div className="metric-value color_pr glow-text">{metric.value}</div>
-                    <div className="metric-label color_sec">{metric.label}</div>
+                  <div key={index} className="metric-card">
+                    <div className="metric-value">{metric.value}</div>
+                    <div className="metric-label">{metric.label}</div>
                   </div>
                 ))}
               </div>
-              <div className="results-feedback bg_cream">
+              <div className="feedback-text">
                 <p>{projectData.results.feedback}</p>
               </div>
-              <div className="key-achievements">
-                <h4 className="color_sec">Key Achievements:</h4>
-                <ul className="achievements-list">
+              <div className="key-findings">
+                <h4>Key Achievements:</h4>
+                <ul className="findings-list">
                   {projectData.results.keyAchievements.map((achievement, index) => (
                     <li key={index}>{achievement}</li>
                   ))}
@@ -333,19 +333,19 @@ export const CafeConnectProject = () => {
         {/* Media Gallery Section */}
         <section className="project-section">
           <div className="container">
-            <h2 className="section-title color_pr text-center">Application Screenshots</h2>
+            <h2 className="section-title text-center">Application Screenshots</h2>
             <div className="media-gallery">
               <div className="gallery-item">
                 <img src={welcomeScreen} alt="CaféConnect Welcome Screen" className="gallery-image" />
-                <div className="gallery-caption color_pr">Welcome Screen Interface</div>
+                <div className="gallery-caption">Welcome Screen Interface</div>
               </div>
               <div className="gallery-item">
                 <img src={staffManagement} alt="Staff Management Interface" className="gallery-image" />
-                <div className="gallery-caption color_pr">Staff Management System</div>
+                <div className="gallery-caption">Staff Management System</div>
               </div>
               <div className="gallery-item">
                 <img src={architectureDiagram} alt="Architecture Diagram" className="gallery-image" />
-                <div className="gallery-caption color_pr">Software Architecture Overview</div>
+                <div className="gallery-caption">Software Architecture Overview</div>
               </div>
             </div>
           </div>
@@ -355,7 +355,7 @@ export const CafeConnectProject = () => {
         <section className="project-cta">
           <div className="container">
             <div className="cta-content">
-              <h2 className="cta-title color_pr">Interested in the project?</h2>
+              <h2 className="cta-title">Interested in the project?</h2>
               <p className="cta-description">
                 Explore the complete source code, documentation, and implementation details on GitHub.
               </p>

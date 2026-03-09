@@ -5,6 +5,9 @@ import { Container, Row, Col } from "react-bootstrap";
 import { dataportfolio, meta } from "../../content_option";
 
 export const Portfolio = () => {
+  const featuredProject = dataportfolio.find(p => p.featured);
+  const otherProjects = dataportfolio.filter(p => !p.featured);
+
   return (
     <HelmetProvider>
       <Container className="About-header">
@@ -19,13 +22,48 @@ export const Portfolio = () => {
             <hr className="t_border my-4 ml-0 text-left" />
           </Col>
         </Row>
+
+        {/* Featured Project - Ducket */}
+        {featuredProject && (
+          <div className="featured-project mb-5">
+            <div className="featured-badge">Featured Startup</div>
+            <div className="featured-grid">
+              <div className="featured-image">
+                <img src={featuredProject.img} alt={featuredProject.title} />
+              </div>
+              <div className="featured-content">
+                <h2 className="featured-title">{featuredProject.title}</h2>
+                <p className="featured-description">{featuredProject.description}</p>
+                <div className="featured-tech">
+                  <span className="tech-label">Built with:</span>
+                  {featuredProject.tech?.map((icon, idx) => (
+                    <img
+                      key={idx}
+                      src={
+                        icon.customSrc
+                          ? icon.customSrc
+                          : `https://cdn.simpleicons.org/${icon.name}`
+                      }
+                      alt={icon.name}
+                      title={icon.name}
+                      className="tech-icon"
+                    />
+                  ))}
+                </div>
+                <a href={featuredProject.link} className="featured-btn">
+                  View Project Details
+                </a>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Other Projects Grid */}
+        <h3 className="other-projects-title mb-4">Other Projects</h3>
         <div className="mb-5 po_items_ho">
-          {dataportfolio.map((data, i) => (
+          {otherProjects.map((data, i) => (
             <div className="po_item" key={i}>
-              {/* Project name header - Top cell */}
               <div className="project-name">{data.title}</div>
-              
-              {/* Image wrapper - Middle cell */}
               <div className="image-wrapper">
                 <div className="image-container">
                   <img src={data.img} alt={data.title || `Project ${i + 1}`} />
@@ -35,8 +73,6 @@ export const Portfolio = () => {
                   </div>
                 </div>
               </div>
-              
-              {/* Tech stack - Bottom cell */}
               <div className="tech-icons">
                 <span className="tech-label">Built with:</span>
                 {data.tech?.map((icon, idx) => (

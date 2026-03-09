@@ -15,7 +15,7 @@
     font-size: 16px;
     font-weight: 700;
     margin: 15px 0 20px;
-    font-family: 'Raleway';
+    font-family: 'Inter', sans-serif;
 }
 
 .progress {
@@ -63,7 +63,7 @@
 
 .service__title {
     padding: 8px 0;
-    border-bottom: solid 2px var(--secondary-color);
+    border-bottom: solid 2px var(--card-border);
 }
 
 .service-section .service-category-title {
@@ -115,9 +115,10 @@
 }
 
 .btn-primary {
-  background-color: #050505 !important;
-  border-color: #0c0c0c !important;
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
   color: #fff !important;
+  border-radius: 6px;
 }
 .cert-grid {
   display: flex;

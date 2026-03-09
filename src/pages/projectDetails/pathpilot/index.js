@@ -157,8 +157,8 @@ export const PathPilotProject = () => {
           <div className="container">
             <div className="hero-grid">
               <div className="hero-content">
-                <h1 className="project-title glow-text color_pr">{projectData.title}</h1>
-                <p className="project-subtitle color_sec">{projectData.subtitle}</p>
+                <h1 className="project-title">{projectData.title}</h1>
+                <p className="project-subtitle">{projectData.subtitle}</p>
                 <p className="project-overview">{projectData.overview}</p>
                 
                 <div className="hero-buttons">
@@ -168,7 +168,7 @@ export const PathPilotProject = () => {
                 </div>
               </div>
               <div className="hero-image-container">
-                <div className="hero-image neon-border pulse">
+                <div className="hero-image">
                   <img src={pathPilotImage} alt="PathPilot Mobile App Interface" />
                 </div>
               </div>
@@ -177,10 +177,10 @@ export const PathPilotProject = () => {
         </section>
 
         {/* Motivation Section */}
-        <section className="project-section bg_cream">
+        <section className="project-section">
           <div className="container">
             <div className="section-content-wrapper">
-              <h2 className="section-title color_pr">{projectData.motivation.title}</h2>
+              <h2 className="section-title">{projectData.motivation.title}</h2>
               <div className="section-content">
                 <p>{projectData.motivation.content}</p>
               </div>
@@ -191,16 +191,16 @@ export const PathPilotProject = () => {
         {/* Technologies Section */}
         <section className="project-section">
           <div className="container">
-            <h2 className="section-title color_pr text-center">Technologies & Tools</h2>
+            <h2 className="section-title text-center">Technologies & Tools</h2>
             <div className="tech-grid">
               {projectData.technologies.map((tech, index) => (
-                <div key={index} className="tech-card bg_cream neon-border">
+                <div key={index} className="tech-card">
                   <img 
                     src={`https://cdn.simpleicons.org/${tech.icon}`} 
                     alt={tech.name}
                     className="tech-card-icon"
                   />
-                  <h4 className="tech-card-title color_sec">{tech.name}</h4>
+                  <h4 className="tech-card-title">{tech.name}</h4>
                   <p className="tech-card-description">{tech.description}</p>
                 </div>
               ))}
@@ -209,16 +209,16 @@ export const PathPilotProject = () => {
         </section>
 
         {/* Features Section */}
-        <section className="project-section bg_cream">
+        <section className="project-section">
           <div className="container">
-            <h2 className="section-title color_pr text-center">Key Features & Implementation</h2>
+            <h2 className="section-title text-center">Key Features & Implementation</h2>
             <div className="features-grid">
               {projectData.features.map((feature, index) => (
-                <div key={index} className="feature-card bg_accent">
+                <div key={index} className="feature-card">
                   <div className="feature-icon">{feature.icon}</div>
-                  <h4 className="feature-title color_sec">{feature.title}</h4>
+                  <h4 className="feature-title">{feature.title}</h4>
                   <p className="feature-description">{feature.description}</p>
-                  <div className="feature-technical color_sec">{feature.technical}</div>
+                  <div className="feature-technical">{feature.technical}</div>
                 </div>
               ))}
             </div>
@@ -229,13 +229,13 @@ export const PathPilotProject = () => {
         <section className="project-section">
           <div className="container">
             <div className="challenges-wrapper">
-              <h2 className="section-title color_pr text-center">Technical Challenges & Solutions</h2>
+              <h2 className="section-title text-center">Technical Challenges & Solutions</h2>
               <div className="challenges-list">
                 {projectData.challenges.map((challenge, index) => (
-                  <div key={index} className="challenge-item bg_cream">
-                    <h4 className="challenge-title color_sec">{challenge.title}</h4>
+                  <div key={index} className="challenge-item">
+                    <h4 className="challenge-title">{challenge.title}</h4>
                     <p className="challenge-description">{challenge.description}</p>
-                    <div className="challenge-solution bg_accent">
+                    <div className="challenge-solution">
                       <strong>Solution:</strong> {challenge.solution}
                     </div>
                   </div>
@@ -249,11 +249,11 @@ export const PathPilotProject = () => {
         <section className="project-section">
           <div className="container">
             <div className="technical-wrapper">
-              <h2 className="section-title color_pr text-center">{projectData.technicalHighlights.title}</h2>
+              <h2 className="section-title text-center">{projectData.technicalHighlights.title}</h2>
               <div className="technical-grid">
                 {projectData.technicalHighlights.details.map((detail, index) => (
-                  <div key={index} className="technical-card bg_cream">
-                    <div className="technical-category color_sec">{detail.category}</div>
+                  <div key={index} className="technical-card">
+                    <div className="technical-category">{detail.category}</div>
                     <div className="technical-description">{detail.description}</div>
                   </div>
                 ))}
@@ -263,21 +263,21 @@ export const PathPilotProject = () => {
         </section>
 
         {/* Media Gallery Section */}
-        <section className="project-section bg_cream">
+        <section className="project-section">
           <div className="container">
-            <h2 className="section-title color_pr text-center">Project Gallery</h2>
+            <h2 className="section-title text-center">Project Gallery</h2>
             <div className="media-gallery">
               <div className="gallery-item">
                 <img src={projectPoster} alt="PathPilot Project Poster" className="gallery-image" />
-                <div className="gallery-caption color_pr">Project Overview Poster</div>
+                <div className="gallery-caption">Project Overview Poster</div>
               </div>
               {/* <div className="gallery-item">
                 <img src={userFlowDiagram} alt="User Flow Diagram" className="gallery-image" />
-                <div className="gallery-caption color_pr">User Authentication Flow</div>
+                <div className="gallery-caption">User Authentication Flow</div>
               </div>
               <div className="gallery-item">
                 <img src={mapScreenshot} alt="Map Interface" className="gallery-image" />
-                <div className="gallery-caption color_pr">Live Navigation Interface</div>
+                <div className="gallery-caption">Live Navigation Interface</div>
               </div> */}
             </div>
           </div>
@@ -287,7 +287,7 @@ export const PathPilotProject = () => {
         <section className="project-cta">
           <div className="container">
             <div className="cta-content">
-              <h2 className="cta-title color_pr">Interested in the project?</h2>
+              <h2 className="cta-title">Interested in the project?</h2>
               <p className="cta-description">
                 Explore the complete source code, documentation, and implementation details on GitHub.
               </p>

@@ -6,6 +6,8 @@ import { Portfolio } from "../pages/portfolio";
 import { PathPilotProject } from "../pages/projectDetails/pathpilot";
 import { CafeConnectProject } from "../pages/projectDetails/cafeconnect";
 import { ReadlyProject } from "../pages/projectDetails/readly";
+import { BoopProject } from "../pages/projectDetails/boop";
+import { DucketProject } from "../pages/projectDetails/ducket";
 import { ContactUs } from "../pages/contact";
 import { About } from "../pages/about";
 import { Socialicons } from "../components/socialicons";
@@ -30,6 +32,8 @@ const AnimatedRoutes = withRouter(({ location }) => (
         <Route path="/projectDetails/pathpilot" element={<PathPilotProject />} />
         <Route path="/projectDetails/readly" element={<ReadlyProject />} />
         <Route path="/projectDetails/cafeconnect" element={<CafeConnectProject  />} />
+        <Route path="/projectDetails/boop" element={<BoopProject />} />
+        <Route path="/projectDetails/ducket" element={<DucketProject />} />
 
         {/* <Route path="*" element={<Home />} /> */}
       </Routes>

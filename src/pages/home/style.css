@@ -37,7 +37,6 @@ section {
   background-position: center;
   min-height: 700px;
   position: relative;
-  filter: saturate(0.7);
 }
 
 @media (max-width: 991.98px) {
@@ -72,73 +71,77 @@ section {
   font-weight: 700;
 }
 
+/* Founder Callout */
+.founder-callout {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 1.5rem;
+  padding: 12px 20px;
+  background: var(--cream-color);
+  border-left: 3px solid var(--accent-color);
+  border-radius: 0 8px 8px 0;
+}
+
+.callout-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-color-2);
+  white-space: nowrap;
+}
+
+.callout-link {
+  font-weight: 600;
+  color: var(--primary-color) !important;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.callout-link:hover {
+  color: var(--accent-color) !important;
+}
+
 /* Buttons */
 .ac_btn {
-  padding: 4px 19px;
-  color: var(--secondary-color);
-  border: 2px solid var(--secondary-color);
+  padding: 10px 24px;
+  color: #FFFFFF;
+  border: 2px solid var(--primary-color);
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  transition: all 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-  border-radius: 0;
+  transition: all 0.3s ease;
+  border-radius: 6px;
   margin-right: 20px;
-  background: var(--bg-color);
+  background: var(--primary-color);
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
 }
 
 .ac_btn:hover {
-  box-shadow: 8px 8px 0 var(--text-color-3), -8px -8px 0 var(--text-color-3);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px var(--card-shadow);
 }
 
 .ac_btn .ring {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translate3d(0, 90px, 0);
-  background: transparent;
-}
-
-.ac_btn .one {
-  background-color: var(--secondary-color);
-  transition: all 0.3s ease;
-  z-index: -4;
-}
-
-.ac_btn .two {
-  background-color: var(--primary-color);
-  transition: all 0.5s ease;
-  z-index: -3;
-}
-
-.ac_btn .three {
-  background-color: var(--text-color-3);
-  transition: all 0.7s ease;
-  z-index: -3;
-}
-
-.ac_btn:hover .one,
-.ac_btn:hover .two,
-.ac_btn:hover .three {
-  transform: translate3d(0, 0, 0);
-  opacity: 1;
+  display: none;
 }
 
 #button_p {
-  background: var(--secondary-color);
-  color: var(--bg-color);
+  background: var(--primary-color);
+  color: #FFFFFF;
 }
 
-/* Resume Button Styles */
 #button_r {
-  background: linear-gradient(45deg, var(--secondary-color), var(--text-color-3));
-  color: var(--bg-color);
+  background: var(--accent-color);
+  color: var(--primary-color);
+  border-color: var(--accent-color);
 }
 
 #button_r:hover {
-  background: linear-gradient(45deg, var(--text-color-3), var(--secondary-color));
-  box-shadow: 0 0 20px var(--secondary-color), 0 0 30px var(--secondary-color);
+  background: #E3B635;
+  border-color: #E3B635;
 }
 
 /* Intro Button Group */
@@ -175,11 +178,12 @@ section {
 }
 
 .cert-title {
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 1.2rem;
+  font-weight: 600;
   margin-bottom: 1rem;
-  font-family: 'Marcellus', serif;
+  font-family: 'Outfit', sans-serif;
   text-align: center;
+  color: var(--text-color-2);
 }
 
 .cert-grid {
@@ -224,12 +228,12 @@ section {
   .cert-img {
     height: 60px;
   }
-}
 
-/* Misc elements */
-.who_am_I {
-  font-family: Cinzel;
-  
+  .founder-callout {
+    flex-direction: column;
+    gap: 4px;
+    align-items: flex-start;
+  }
 }
 
 .has-first-color {
@@ -238,11 +242,11 @@ section {
 
 .btn-portfolio {
   background: var(--primary-color);
-  border-radius: 0;
+  border-radius: 6px;
 }
 
 .btn-portfolio a {
-  color: var(--bg-color);
+  color: #FFFFFF;
   text-decoration: none;
 }
 
@@ -250,6 +254,7 @@ section {
   color: var(--text-color);
   text-decoration: none;
 }
+
 .intro-description {
   text-align: justify;
 }
